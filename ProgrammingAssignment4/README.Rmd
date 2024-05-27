@@ -1,0 +1,27 @@
+---
+title: "README"
+author: "lbedwell"
+date: "2024-05-27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## README for Getting and Cleaning Data Course Project
+
+This assignment's focus is on wearable computing and the data it produces for valuable insights. Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data used in this assignment was collected from accelerometers from Samsung Galaxy S smartphones. If interested in the study, please see the site where the data was obtained:  http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+The objectives of this assignment were:  
+1.    Merges the training and the test sets to create one data set.
+
+2.    Extracts only the measurements on the mean and standard deviation for each measurement. 
+
+3.    Uses descriptive activity names to name the activities in the data set
+
+4.    Appropriately labels the data set with descriptive variable names. 
+
+5.    From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+At the end of this assignment, we are to produce the following: 1) a tidy data set (see tidy_data_output.txt); 2) the link to a Github repo with the script performing the analysis (see run_analysis.R), and; 3) a code book describing the data, variables, and any transformations/work performed to clean up the data (see CodeBook.Rmd) along with a README.Rmd in the repo.
