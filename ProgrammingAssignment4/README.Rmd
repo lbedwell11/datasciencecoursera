@@ -25,3 +25,7 @@ The objectives of this assignment were:
 5.    From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 At the end of this assignment, we are to produce the following: 1) a tidy data set (see tidy_data_output.txt); 2) the link to a Github repo with the script performing the analysis (see run_analysis.R), and; 3) a code book describing the data, variables, and any transformations/work performed to clean up the data (see CodeBook.Rmd) along with a README.Rmd in the repo.
+
+
+
+

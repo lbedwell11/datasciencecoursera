@@ -85,22 +85,3 @@ write.table(x = final_df,
             file = "ProgrammingAssignment4/tidy_data_output.txt", 
             quote = FALSE, 
             row.names = FALSE)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

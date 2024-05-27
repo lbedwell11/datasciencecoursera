@@ -66,6 +66,3 @@ Std Dev = standard deviation of variable measurement type
  "freqBodyGyroscopeMag-Std Dev()"          "freqBodyGyroscopeMag-meanFreq()"        
  "freqBodyGyroscopeJerkMag-mean()"         "freqBodyGyroscopeJerkMag-Std Dev()"     
  "freqBodyGyroscopeJerkMag-meanFreq()" 
-
-
-
