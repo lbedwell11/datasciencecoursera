@@ -1,0 +1,68 @@
+---
+title: "CodeBook_PA4"
+author: "lbedwell"
+date: "2024-05-27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Getting and Cleaning Data: Week 4 Assignment
+
+This is a code book for the programming assignment #4. The data for this assignment is linked from the course website to represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+ 
+Here is the source for where the data for the project was obtained: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+
+The variables in this data were dervied from the 'activity' and 'features' .txt sources. Please refer to the .txt for full details.
+
+The transformations: the raw source files were separated by training and testing data .txt files which needed to be read in separately and then merged together to create one data frame. Column cleaning and naming were joined by the features and activity files. Subsetting of the combined data source took place next as to narrow down the measurements of interest to keep in the data frame for this assignment.
+
+variables:  
+subject = subject #  
+activity = activity type  
+mean = average of variable measurement type  
+Std Dev = standard deviation of variable measurement type  
+
+"timeBodyAccelerometer-mean()-X"          "timeBodyAccelerometer-mean()-Y"         
+"timeBodyAccelerometer-mean()-Z"          "timeBodyAccelerometer-Std Dev()-X"      
+"timeBodyAccelerometer-Std Dev()-Y"       "timeBodyAccelerometer-Std Dev()-Z"      
+"timeGravityAccelerometer-mean()-X"       "timeGravityAccelerometer-mean()-Y"      
+"timeGravityAccelerometer-mean()-Z"       "timeGravityAccelerometer-Std Dev()-X"   
+"timeGravityAccelerometer-Std Dev()-Y"    "timeGravityAccelerometer-Std Dev()-Z"   
+"timeBodyAccelerometerJerk-mean()-X"      "timeBodyAccelerometerJerk-mean()-Y"     
+"timeBodyAccelerometerJerk-mean()-Z"      "timeBodyAccelerometerJerk-Std Dev()-X"  
+"timeBodyAccelerometerJerk-Std Dev()-Y"   "timeBodyAccelerometerJerk-Std Dev()-Z"  
+"timeBodyGyroscope-mean()-X"              "timeBodyGyroscope-mean()-Y"             
+"timeBodyGyroscope-mean()-Z"              "timeBodyGyroscope-Std Dev()-X"          
+"timeBodyGyroscope-Std Dev()-Y"           "timeBodyGyroscope-Std Dev()-Z"          
+"timeBodyGyroscopeJerk-mean()-X"          "timeBodyGyroscopeJerk-mean()-Y"         
+"timeBodyGyroscopeJerk-mean()-Z"          "timeBodyGyroscopeJerk-Std Dev()-X"      
+"timeBodyGyroscopeJerk-Std Dev()-Y"       "timeBodyGyroscopeJerk-Std Dev()-Z"      
+"timeBodyAccelerometerMag-mean()"         "timeBodyAccelerometerMag-Std Dev()"     
+"timeGravityAccelerometerMag-mean()"      "timeGravityAccelerometerMag-Std Dev()"  
+"timeBodyAccelerometerJerkMag-mean()"     "timeBodyAccelerometerJerkMag-Std Dev()" 
+"timeBodyGyroscopeMag-mean()"             "timeBodyGyroscopeMag-Std Dev()"         
+"timeBodyGyroscopeJerkMag-mean()"         "timeBodyGyroscopeJerkMag-Std Dev()"     
+"freqBodyAccelerometer-mean()-X"          "freqBodyAccelerometer-mean()-Y"         
+"freqBodyAccelerometer-mean()-Z"          "freqBodyAccelerometer-Std Dev()-X"      
+"freqBodyAccelerometer-Std Dev()-Y"       "freqBodyAccelerometer-Std Dev()-Z"      
+"freqBodyAccelerometer-meanFreq()-X"      "freqBodyAccelerometer-meanFreq()-Y"     
+"freqBodyAccelerometer-meanFreq()-Z"      "freqBodyAccelerometerJerk-mean()-X"     
+"freqBodyAccelerometerJerk-mean()-Y"      "freqBodyAccelerometerJerk-mean()-Z"     
+ "freqBodyAccelerometerJerk-Std Dev()-X"   "freqBodyAccelerometerJerk-Std Dev()-Y"  
+ "freqBodyAccelerometerJerk-Std Dev()-Z"   "freqBodyAccelerometerJerk-meanFreq()-X" 
+ "freqBodyAccelerometerJerk-meanFreq()-Y"  "freqBodyAccelerometerJerk-meanFreq()-Z" 
+ "freqBodyGyroscope-mean()-X"              "freqBodyGyroscope-mean()-Y"             
+ "freqBodyGyroscope-mean()-Z"              "freqBodyGyroscope-Std Dev()-X"          
+ "freqBodyGyroscope-Std Dev()-Y"           "freqBodyGyroscope-Std Dev()-Z"          
+ "freqBodyGyroscope-meanFreq()-X"          "freqBodyGyroscope-meanFreq()-Y"         
+ "freqBodyGyroscope-meanFreq()-Z"          "freqBodyAccelerometerMag-mean()"        
+ "freqBodyAccelerometerMag-Std Dev()"      "freqBodyAccelerometerMag-meanFreq()"    
+ "freqBodyAccelerometerJerkMag-mean()"     "freqBodyAccelerometerJerkMag-Std Dev()" 
+ "freqBodyAccelerometerJerkMag-meanFreq()" "freqBodyGyroscopeMag-mean()"            
+ "freqBodyGyroscopeMag-Std Dev()"          "freqBodyGyroscopeMag-meanFreq()"        
+ "freqBodyGyroscopeJerkMag-mean()"         "freqBodyGyroscopeJerkMag-Std Dev()"     
+ "freqBodyGyroscopeJerkMag-meanFreq()" 
