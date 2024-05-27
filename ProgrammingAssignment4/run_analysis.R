@@ -8,7 +8,6 @@
 
 library(tidyverse)
 
-##HELP  https://github.com/charchitjain/getting-and-cleaning-data-Week-4-Assignment/blob/master/run_analysis.R
 #unzip the files
 zipped_files <- list.files("data/ProgAssignment4", pattern = ".zip$", full.names = TRUE)
 walk(zipped_files, unzip, exdir= "data/PA4unzipped")
